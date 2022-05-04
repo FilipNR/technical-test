@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "LyKyO3PaAZ",
+    "password": "NAK8keNe1L",
+    "database": "LyKyO3PaAZ",
+    "host": "remotemysql.com",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "LyKyO3PaAZ",
+    "password": "NAK8keNe1L",
+    "database": "LyKyO3PaAZ",
+    "host": "remotemysql.com",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "LyKyO3PaAZ",
+    "password": "NAK8keNe1L",
+    "database": "LyKyO3PaAZ",
+    "host": "remotemysql.com",
+    "dialect": "mysql"
+  }
+}
