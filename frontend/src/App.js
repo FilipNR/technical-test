@@ -17,7 +17,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={HeaderResponsive(links)}>
+        <Route path="/technical-test" element={HeaderResponsive(links)}>
           <Route index element={<Airports />}></Route>
           <Route path="airlines" element={<Airlines />}></Route>
           <Route path="create/airport" element={<AirportCreate airports={data} />}></Route>

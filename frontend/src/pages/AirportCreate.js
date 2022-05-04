@@ -6,13 +6,13 @@ const Airports = () => {
     const [data, setData] = useState([]);
     const [airlines, setAirlines] = useState([]);
     const getData = async (link) => {
-        const resp = await fetch('http://localhost:8000/countries');
+        const resp = await fetch('https://airportmaps-backend.herokuapp.com/countries');
         const respJson = await resp.json();
         setData(respJson);
     };
 
     const getAirlines = async (link) => {
-        const resp = await fetch('http://localhost:8000/airlines');
+        const resp = await fetch('https://airportmaps-backend.herokuapp.com/airlines');
         const respJson = await resp.json();
         setAirlines(respJson);
     };
@@ -30,7 +30,7 @@ const Airports = () => {
     const [position, setPosition] = useState(center) // Marker position, used to input latitude and longitude of airport
     return (
         <>
-            <form action="http://localhost:8000/airports" method="post">
+            <form action="https://airportmaps-backend.herokuapp.com/airports" method="post">
                 <label htmlFor="airport_name">Airport name: </label>
                 <input type="text" name="airport_name" required />
                 <label htmlFor="country">Airport country: </label>

@@ -12,7 +12,7 @@ router.get("/", async (req, res) => {
 router.post("/", async (req, res) => {
     const post = req.body
     const { name, country } = post;
-    res.redirect('http://localhost:3000/airlines')
+    res.redirect('https://filipnr.github.io/technical-test/')
     await Airlines.create({ name, country }); // Create new airline from post request
 
 });

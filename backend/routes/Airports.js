@@ -13,7 +13,7 @@ router.post("/", async (req, res) => {
     const post = req.body;
     const { airport_name, country, latitude, longitude, airlines } = post;
     console.log(req.body)
-    res.redirect('http://localhost:3000/')
+    res.redirect('https://filipnr.github.io/technical-test/')
 
     await Airport.create({
         name: airport_name,

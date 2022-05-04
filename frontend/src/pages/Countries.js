@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 const Countries = () => {
     const [data, setData] = useState([]);
     const getData = async () => {
-        const resp = await fetch('http://localhost:8000/countries');
+        const resp = await fetch('https://airportmaps-backend.herokuapp.com/countries');
         const respJson = await resp.json();
         setData(respJson);
     };

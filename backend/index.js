@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-
+let port = process.env.PORT || 3000;
 const db = require('./models');
 
 const airportRouter = require('./routes/Airports');
@@ -16,7 +16,7 @@ app.use("/countries", countryRouter);
 app.use("/airlines", airlinesRouter);
 
 db.sequelize.sync().then(() => {
-  app.listen(8000, async () => {
+  app.listen(port, async () => {
     console.log('Server started on port 8000');
   });
 });

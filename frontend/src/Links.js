@@ -1,19 +1,19 @@
 export const links = {
   "links": [
     {
-      "link": "/",
+      "link": "/technical-test",
       "label": "Airports"
     },
     {
-      "link": "/create/airport",
+      "link": "/technical-test/create/airport",
       "label": "Add an Airport"
     },
     {
-      "link": "/airlines",
+      "link": "/technical-test/airlines",
       "label": "Airlines"
     },
     {
-      "link": "/countries",
+      "link": "/technical-test/countries",
       "label": "Country codes"
     }
   ]

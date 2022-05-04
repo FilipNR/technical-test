@@ -15,13 +15,13 @@ const Airports = () => {
     const [countries, setCountries] = useState([]);
 
     const getData = async () => {
-        const resp = await fetch('http://localhost:8000/airports');
+        const resp = await fetch('https://airportmaps-backend.herokuapp.com/airports');
         const respJson = await resp.json();
         setData(respJson);
     };
 
     const getCountries = async () => {
-        const resp = await fetch('http://localhost:8000/countries');
+        const resp = await fetch('https://airportmaps-backend.herokuapp.com/countries');
         const respJson = await resp.json();
         setCountries(respJson);
     };
@@ -38,9 +38,9 @@ const Airports = () => {
         const name = e.target[0].value;
         const country = e.target[1].value;
         e.preventDefault();
-        window.location.reload();
+        // window.location.reload();
         console.log(e)
-        axios.put(`http://localhost:8000/airports/${id}`, {
+        axios.put(`https://airportmaps-backend.herokuapp.com/airports/${id}`, {
             name,
             country
         });
@@ -48,7 +48,7 @@ const Airports = () => {
 
     const deleteAirport = async (id, e) => {
         e.preventDefault();
-        axios.delete(`http://localhost:8000/airports/${id}`);
+        axios.delete(`https://airportmaps-backend.herokuapp.com/airports/${id}`);
         let tempData = data.filter(val => {
             return val.id !== id // Filter the deleted marker
         });
